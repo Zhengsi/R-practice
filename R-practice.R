@@ -3,7 +3,7 @@
 # Created on 9-30-2019
 # Modified on 10-22-2019
 
-
+# Log
 #----------------------------------
 #10-22-2019
 # Add codes for plotting
@@ -16,27 +16,24 @@
 #--------------------------------------
 
 # Clean up work space
-rm(list = ls())
-graphics.off()
+rm(list = ls()) # remove objects
+graphics.off() # remove plots
 
 
 # set working directory
-setwd("C:/Users/zheng/Dropbox/Working/VWST") # Fill in with your working directory
+setwd("C:/Users/zhengsi/Dropbox/Working/VWST") # Fill in your working directory
 
+# Install libray
+#install.packages("tidyverse")
+# tidyverse includes a variety of packages
+# 
 
 # Import library
-
-#install.packages("tidyverse")
-#install.packages("dplyr")
-
-#install.packages("ggplot2")
+library(tidyverse)
 
 
-#library(tidyverse)
-library(dplyr)
-library(ggplot2)
-
-
+#-------------------------------------
+# power analysis
 #install.packages("pwr")
 #library(pwr)
 #pwr.anova.test(k = 3,  f = 0.25, sig.level = 0.05, power = .80)
